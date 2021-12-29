@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(255,46,139,1) 8%, rgba(0,0,0,1) 92% );
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.small {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+}
+
+.main {
+    /* border: dashed 1px rgb(0, 0, 0); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 50px;
+}
+
+#boar1 {
+    position: absolute;
+    top: 0px;
+    left: -40%;
+    visibility: visible;
+    background: url("img/boar.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.1) rotate(-10deg);
+}
+
+#boar2 {
+    position: absolute;
+    top: 0px;
+    left: -55%;
+    visibility: visible;
+    background: url("img/boar.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.1) rotate(10deg);
+}
+
+#boar3 {
+    position: absolute;
+    top: 0px;
+    left: -65%;
+    visibility: visible;
+    background: url("img/boar.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.1) rotate(20deg);
+}
+
+#boar4 {
+    position: absolute;
+    top: 0px;
+    left: -90%;
+    visibility: visible;
+    background: url("img/boar.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.1) rotate(-20deg);
+}
+
+#boars1 {
+    position: absolute;
+    top: 0px;
+    left: 110%;
+    visibility: visible;
+    background: url("img/boars1.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.7) rotate(-5deg);
+    opacity: 0.9;
+    mix-blend-mode:luminosity;
+}
+
+#boars2 {
+    position: absolute;
+    top: 0px;
+    left: 110%;
+    visibility: visible;
+    background: url("img/boars2.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.5) rotate(-5deg);
+    opacity: 0.8;
+    mix-blend-mode:luminosity;
+}
+
+#martini {
+    position: absolute;
+    top: -43%;
+    left: -12%;
+    visibility: visible;
+    background: url("img/martini.png") no-repeat;
+    background-size: contain;
+    transform: scale(0.1) rotate(5deg);
+
+}
+
+.content_container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
+/* shows the dotted box */
+.shuffle {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: black dashed 2px;
+    line-height: 20px;
+}
+
+.prompt_image {
+    margin-left: 10px;
+}
+
+#prompt {
+    margin-top: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#prompts {
+    margin-top: 15px;
+
+    font-weight:bold;
+    line-height: 30px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#adds {
+    width: 70%;
+    height: 20px;
+}
+
+#send {
+    z-index: 2;
+    width: 25%;
+}
+
+.bottom {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 75%;
+    justify-content:stretch;
+}
+
+#twitter {
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#twitter a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration:line-through;
+}
+
+#responses {
+    margin-top: 5px;
+    z-index: 3;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+}
+
+#logged_display {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    overflow: scroll
+}
+
+@media all and (orientation: portrait) {  
+    body {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .main {
+        line-height: 40px;
+    }
+
+    .shuffle {
+        width: 85%;
+    }
+
+    .content_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prompt_image {
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+
+    #martini {
+        top: -85%;
+        left: 13%;
+    }
+
+    .bottom {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 35%;
+        justify-content:stretch;
+    }
+
+    #responses {
+        margin-left: 5px;
+        width: 60%;
+    }
+
+    .small {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+
+    #boar1 {
+        transform: scale(0.3) rotate(-10deg);
+    }
+
+    #boar2 {
+        transform: scale(0.3) rotate(10deg);
+    }
+
+    #boar3 {
+        transform: scale(0.3) rotate(20deg);
+    }
+
+    #boar4 {
+        transform: scale(0.2) rotate(-10deg);
+    }
+}
