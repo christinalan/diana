@@ -5,7 +5,8 @@ app.use(bodyParser.json());
 
 app.use("/", express.static("public"));
 
-app.listen(3000, () => {
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log("listening at localhost:3000");
 });
 
